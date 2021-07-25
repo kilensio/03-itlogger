@@ -4,14 +4,14 @@ import { searchLogs } from '../../actions/logActions'
 import PropTypes from 'prop-types'
 
 const SearchBar = ({ searchLogs }) => {
-  const text = useRef('')
+  // const text = useRef('')
 
-  const onChange = e => {
-    searchLogs(text.current.value)
-  }
   // const onChange = e => {
-  //   searchLogs(e.target.value.trim())
+  //   searchLogs(text.current.value)
   // }
+  const onChange = e => {
+    searchLogs(e.target.value.trim())
+  }
 
   return (
     <nav style={{ marginBottom: '30px' }} className="cyan">
@@ -22,7 +22,7 @@ const SearchBar = ({ searchLogs }) => {
             id="search" 
             type="search" 
             placeholder='Search Logs...'
-            ref={text}
+            // ref={text}
             onChange={onChange}
           />
           <label className="label-icon" htmlFor="search"><i className="material-icons">search</i></label>
