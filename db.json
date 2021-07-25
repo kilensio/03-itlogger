@@ -16,10 +16,24 @@
     },
     {
       "id": 3,
-      "message": "Changed momory on workstation 050",
+      "message": "Changed memory on workstation 050",
       "attention": false,
       "date": "03-02-2019",
       "tech": "Sara Wilson"
+    },
+    {
+      "message": "New message",
+      "attention": true,
+      "tech": "Sam Smith",
+      "date": "2021-07-24T23:03:18.573Z",
+      "id": 4
+    },
+    {
+      "message": "Log log",
+      "attention": false,
+      "tech": "Sara Wilson",
+      "date": "2021-07-24T23:03:38.003Z",
+      "id": 5
     }
   ],
   "techs": [
